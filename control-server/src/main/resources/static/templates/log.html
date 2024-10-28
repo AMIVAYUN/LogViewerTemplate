@@ -1,0 +1,2868 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/css/log.css" rel="stylesheet">
+  <title>Log Viewer v1.0</title>
+  <script src="/static/js/log.js"></script>
+</head>
+
+<body>
+  <div class="log-wrap">
+    <div class="log-header">
+      <h2> 로그 뷰어 </h2>
+    </div>
+    <div class="content-box">
+      <div class="server-menu">
+        <button class="btn_logs" id="dev">개발</button>
+<!--        <button class="btn_logs" id="deploy">배포</button>-->
+      </div>
+      <div id="log" class="log">
+        <div id="box" class="log-box">
+          <!--                    <div>11:38:57.506 [restartedMain] DEBUG o.s.b.a.ApplicationAvailabilityBean &#45;&#45; Application-->
+          <!--                        availability-->
+          <!--                        state ReadinessState changed to ACCEPTING_TRAFFIC\-->
+          <!--                    </div>-->
+          <div>[http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/test", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to com.ssafy.i10a709be.RestController.TestRestController#test()
+          </div>
+          <div>[http-nio-8080-exec-7] INFO com.ssafy.i10a709be.RestController.TestRestController.test:15 - hi i'm client
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp,
+            image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported
+            [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:305
+            - Nothing to write: null body
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            200 OK
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.doClose:1122
+            - Closing
+            org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@89e05d7,
+            started on Tue Feb 20 17:19:17 KST 2024
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.stop:476 - Stopping beans in phase 2147483647
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.stop:476 - Stopping beans in phase 2147482623
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.lambda$doStop$4:348 - Bean
+            'webServerGracefulShutdown' completed its stop procedure
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.stop:476 - Stopping beans in phase 2147481599
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.lambda$doStop$4:348 - Bean
+            'webServerStartStop' completed its stop procedure
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.stop:476 - Stopping beans in phase -2147483647
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.context.support.DefaultLifecycleProcessor.lambda$doStop$4:348 - Bean
+            'springBootLoggingLifecycle' completed its stop procedure
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.jmx.export.annotation.AnnotationMBeanExporter.destroy:468 - Unregistering JMX-exposed
+            beans on shutdown
+          </div>
+          <div>[SpringApplicationShutdownHook] DEBUG
+            org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:313 - Shutting down
+            ExecutorService 'applicationTaskExecutor'
+          </div>
+          <div>[main] DEBUG org.springframework.web.socket.client.standard.StandardWebSocketClient.invoke:103 -
+            Connecting to ws://localhost:8081/logs
+          </div>
+          <div>[restartedMain] INFO com.temp.be.I10A709BeApplication.logStarting:50 - Starting
+            I10A709BeApplication using Java 21.0.1 with PID 7316
+            (C:\Users\SSAFY\IdeaProjects\BackEndBase\I10A709BE\build\classes\java\main started by SSAFY in
+            C:\Users\SSAFY\IdeaProjects\BackEndBase)
+          </div>
+          <div>[restartedMain] DEBUG com.temp.be.I10A709BeApplication.logStarting:51 - Running with Spring Boot
+            v3.2.2, Spring v6.1.3
+          </div>
+          <div>[restartedMain] INFO com.temp.be.I10A709BeApplication.logStartupProfileInfo:654 - No active
+            profile set, falling back to 1 default profile: "dev"
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.SpringApplication.load:687 - Loading source class
+            com.temp.be.I10A709BeApplication
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.restart.ChangeableUrls.logTo:251 - Matching URLs
+            for reloading : [file:/C:/Users/SSAFY/IdeaProjects/BackEndBase/I10A709BE/build/classes/java/main/,
+            file:/C:/Users/SSAFY/IdeaProjects/BackEndBase/I10A709BE/build/resources/main/]
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings.logTo:251 - Included
+            patterns for restart : []
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings.logTo:251 - Excluded
+            patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/,
+            /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/,
+            /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - Devtools property
+            defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - For additional web
+            related logging consider setting the 'logging.level.web' property to 'DEBUG'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:671
+            - Refreshing
+            org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scanCandidateComponents:476 -
+            Identified candidate component class: file
+            [C:\Users\SSAFY\IdeaProjects\BackEndBase\I10A709BE\build\classes\java\main\com\ssafy\i10a709be\RestController\TestRestController.class]
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.ui.context.support.UiApplicationContextUtils.initThemeSource:86
+            - Unable to locate ThemeSource with name 'themeSource': using default
+            [org.springframework.ui.context.support.ResourceBundleThemeSource@18976691]
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'tomcatServletWebServerFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'websocketServletWebServerCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'servletWebServerFactoryCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named
+            'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'sslBundleRegistry'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to
+            bean named 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'sslPropertiesSslBundleRegistrar'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'fileWatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'sslPropertiesSslBundleRegistrar' via factory method to bean named 'fileWatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named
+            'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named
+            'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'localeCharsetMappingsCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+            via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'errorPageCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+            via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'dispatcherServletRegistration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'dispatcherServlet'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'dispatcherServlet' via factory method to bean named
+            'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'dispatcherServletRegistration' via factory method to bean named
+            'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'multipartConfigElement'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via
+            constructor to bean named
+            'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'errorPageCustomizer' via factory method to bean named
+            'dispatcherServletRegistration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getArchiveFileDocumentRoot:81 -
+            Code archive:
+            C:\Users\SSAFY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\3.2.2\9f274d1bd822c4c57bb5b37ecae2380b980f567\spring-boot-3.2.2.jar
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getExplodedWarFileDocumentRoot:125
+            - Code archive:
+            C:\Users\SSAFY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\3.2.2\9f274d1bd822c4c57bb5b37ecae2380b980f567\spring-boot-3.2.2.jar
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.logNoDocumentRoots:149 - None of
+            the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+          </div>
+          <div>[restartedMain] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:109 - Tomcat
+            initialized with port 8080 (http)
+          </div>
+          <div>[restartedMain] INFO org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler
+            ["http-nio-8080"]
+          </div>
+          <div>[restartedMain] INFO org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+          </div>
+          <div>[restartedMain] INFO org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache
+            Tomcat/10.1.18]
+          </div>
+          <div>[restartedMain] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -
+            Initializing Spring embedded WebApplicationContext
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290
+            - Published root WebApplicationContext as ServletContext attribute with name
+            [org.springframework.web.context.WebApplicationContext.ROOT]
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296
+            - Root WebApplicationContext: initialization completed in 622 ms
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'requestContextFilter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'formContentFilter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'characterEncodingFilter'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans.logMappings:234
+            - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*]
+            order=-9900, requestContextFilter urls=[/*] order=-105
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans.logMappings:234
+            - Mapping servlets: dispatcherServlet urls=[/]
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter.init:240 -
+            Filter 'requestContextFilter' configured for use
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter.init:240
+            - Filter 'characterEncodingFilter' configured for use
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.filter.OrderedFormContentFilter.init:240 -
+            Filter 'formContentFilter' configured for use
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'i10A709BeApplication'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'testRestController'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'threadPoolTaskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'threadPoolTaskExecutorBuilder' via factory method to bean named
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'taskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'taskExecutorBuilder' via factory method to bean named
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
+            via constructor to bean named
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'simpleAsyncTaskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'error'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'beanNameViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+            via constructor to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+            via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'conventionErrorViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'errorAttributes'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'basicErrorController'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via
+            constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via
+            constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via
+            constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@211b91c9'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+            via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+            via constructor to bean named
+            'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+            via constructor to bean named
+            'org.springframework.beans.factory.support.DefaultListableBeanFactory@211b91c9'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'welcomePageHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageHandlerMapping' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'welcomePageNotAcceptableHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named
+            'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'localeResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'themeResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'flashMapManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcValidator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'requestMappingHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerMapping' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerMapping' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerMapping' via factory method to bean named
+            'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.detectHandlerMethods:294 -
+            c.s.i.R.TestRestController:
+            {GET [/test]}: test()
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.detectHandlerMethods:294 -
+            o.s.b.a.w.s.e.BasicErrorController:
+            { [/error]}: error(HttpServletRequest)
+            { [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.handlerMethodsInitialized:366
+            - 3 mappings in 'requestMappingHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcPatternParser'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcUrlPathHelper'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcPathMatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewControllerHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'viewControllerHandlerMapping' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'viewControllerHandlerMapping' via factory method to bean named
+            'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'beanNameHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.detectHandlers:86 -
+            'beanNameHandlerMapping' {}
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'routerFunctionMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'messageConverters'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'stringHttpMessageConverter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mappingJackson2HttpMessageConverter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jacksonObjectMapper'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named
+            'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'parameterNamesModule'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jsonMixinModule'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jsonMixinModuleEntries'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jsonMixinModuleEntries' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.autoconfigure.AutoConfigurationPackages.get:213 -
+            @EnableAutoConfiguration was declared on a class in the package 'com.ssafy.i10a709be'. Automatic @Repository
+            and @Entity scanning is enabled.
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jsonMixinModule' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jsonComponentModule'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26962ba3'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named
+            'standardJacksonObjectMapperBuilderCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named
+            'jacksonObjectMapper'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'resourceHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'resourceHandlerMapping' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.logMappings:176 -
+            'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]],
+            /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath
+            [static/], classpath [public/], ServletContext [/]]}
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'defaultServletHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'requestMappingHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'applicationTaskExecutor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:252 -
+            Initializing ExecutorService 'applicationTaskExecutor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:633
+            - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'handlerFunctionAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcUriComponentsContributor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mvcUriComponentsContributor' via factory method to bean named
+            'requestMappingHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'httpRequestHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'simpleControllerHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'handlerExceptionResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'handlerExceptionResolver' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:305
+            - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewNameTranslator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'defaultViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'viewResolver' via factory method to bean named
+            'org.springframework.beans.factory.support.DefaultListableBeanFactory@211b91c9'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to
+            bean named 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mbeanExporter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'objectNamingStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mbeanExporter' via factory method to bean named
+            'org.springframework.beans.factory.support.DefaultListableBeanFactory@211b91c9'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mbeanServer'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.jmx.support.JmxUtils.locateMBeanServer:127 - Found MBeanServer:
+            com.sun.jmx.mbeanserver.JmxMBeanServer@4141d797
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'springApplicationAdminRegistrar'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.afterPropertiesSet:131
+            - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'applicationAvailability'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'lifecycleProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'lifecycleProcessor' via factory method to bean named
+            'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via
+            constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'threadPoolTaskSchedulerBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'threadPoolTaskSchedulerBuilder' via factory method to bean named
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'taskSchedulerBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'taskSchedulerBuilder' via factory method to bean named
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
+            via constructor to bean named
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'simpleAsyncTaskSchedulerBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'httpMessageConvertersRestClientCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'restClientSsl'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'restClientSsl' via factory method to bean named 'sslBundleRegistry'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'restClientBuilderConfigurer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'multipartResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketMessagingAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration' via
+            constructor to bean named
+            'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'restartingClassPathChangedEventListener'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'fileSystemWatcherFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'restartingClassPathChangedEventListener' via factory method to bean named
+            'fileSystemWatcherFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'classPathFileSystemWatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'classPathRestartStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'classPathFileSystemWatcher' via factory method to bean named
+            'fileSystemWatcherFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'classPathFileSystemWatcher' via factory method to bean named
+            'classPathRestartStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'conditionEvaluationDeltaLoggingListener'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'optionalLiveReloadServer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'liveReloadServer' via factory method to bean named
+            'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'optionalLiveReloadServer' via factory method to bean named 'liveReloadServer'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.livereload.LiveReloadServer.start:113 - Starting
+            live reload server on port 35729
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:59 - LiveReload server
+            is running on port 35729
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'liveReloadServerEventListener'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'liveReloadServerEventListener' via factory method to bean named
+            'optionalLiveReloadServer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:450 -
+            Registering beans for JMX exposure on startup
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter.registerBeans:557
+            - Auto-detecting user-defined JMX MBeans
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase -2147483647
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.doStart:290 -
+            Successfully started bean 'springBootLoggingLifecycle'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase 2147481599
+          </div>
+          <div>[restartedMain] INFO org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler
+            ["http-nio-8080"]
+          </div>
+          <div>[restartedMain] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:241 - Tomcat
+            started on port 8080 (http) with context path ''
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.doStart:290 -
+            Successfully started bean 'webServerStartStop'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase 2147482623
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.doStart:290 -
+            Successfully started bean 'webServerGracefulShutdown'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase 2147483647
+          </div>
+          <div>[main] DEBUG org.springframework.web.socket.client.standard.StandardWebSocketClient.invoke:103 -
+            Connecting to ws://localhost:8081/logs
+          </div>
+          <div>[restartedMain] INFO com.temp.be.I10A709BeApplication.logStarting:50 - Starting
+            I10A709BeApplication using Java 21.0.1 with PID 9536
+            (C:\Users\SSAFY\IdeaProjects\BackEndBase\I10A709BE\build\classes\java\main started by SSAFY in
+            C:\Users\SSAFY\IdeaProjects\BackEndBase\I10A709BE)
+          </div>
+          <div>[restartedMain] DEBUG com.temp.be.I10A709BeApplication.logStarting:51 - Running with Spring Boot
+            v3.2.2, Spring v6.1.3
+          </div>
+          <div>[restartedMain] INFO com.temp.be.I10A709BeApplication.logStartupProfileInfo:654 - No active
+            profile set, falling back to 1 default profile: "dev"
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.SpringApplication.load:687 - Loading source class
+            com.temp.be.I10A709BeApplication
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.restart.ChangeableUrls.logTo:251 - Matching URLs
+            for reloading : [file:/C:/Users/SSAFY/IdeaProjects/BackEndBase/I10A709BE/build/classes/java/main/,
+            file:/C:/Users/SSAFY/IdeaProjects/BackEndBase/I10A709BE/build/resources/main/]
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings.logTo:251 - Included
+            patterns for restart : []
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings.logTo:251 - Excluded
+            patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/,
+            /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/,
+            /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - Devtools property
+            defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - For additional web
+            related logging consider setting the 'logging.level.web' property to 'DEBUG'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:671
+            - Refreshing
+            org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scanCandidateComponents:476 -
+            Identified candidate component class: file
+            [C:\Users\SSAFY\IdeaProjects\BackEndBase\I10A709BE\build\classes\java\main\com\ssafy\i10a709be\RestController\TestRestController.class]
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.ui.context.support.UiApplicationContextUtils.initThemeSource:86
+            - Unable to locate ThemeSource with name 'themeSource': using default
+            [org.springframework.ui.context.support.ResourceBundleThemeSource@4343af33]
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'tomcatServletWebServerFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'websocketServletWebServerCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'servletWebServerFactoryCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named
+            'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'sslBundleRegistry'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to
+            bean named 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'sslPropertiesSslBundleRegistrar'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'fileWatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'sslPropertiesSslBundleRegistrar' via factory method to bean named 'fileWatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named
+            'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named
+            'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'localeCharsetMappingsCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+            via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'errorPageCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+            via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'dispatcherServletRegistration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'dispatcherServlet'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'dispatcherServlet' via factory method to bean named
+            'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'dispatcherServletRegistration' via factory method to bean named
+            'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'multipartConfigElement'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via
+            constructor to bean named
+            'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'errorPageCustomizer' via factory method to bean named
+            'dispatcherServletRegistration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getArchiveFileDocumentRoot:81 -
+            Code archive:
+            C:\Users\SSAFY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\3.2.2\9f274d1bd822c4c57bb5b37ecae2380b980f567\spring-boot-3.2.2.jar
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getExplodedWarFileDocumentRoot:125
+            - Code archive:
+            C:\Users\SSAFY\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\3.2.2\9f274d1bd822c4c57bb5b37ecae2380b980f567\spring-boot-3.2.2.jar
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.logNoDocumentRoots:149 - None of
+            the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+          </div>
+          <div>[restartedMain] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:109 - Tomcat
+            initialized with port 8080 (http)
+          </div>
+          <div>[restartedMain] INFO org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler
+            ["http-nio-8080"]
+          </div>
+          <div>[restartedMain] INFO org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+          </div>
+          <div>[restartedMain] INFO org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache
+            Tomcat/10.1.18]
+          </div>
+          <div>[restartedMain] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -
+            Initializing Spring embedded WebApplicationContext
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290
+            - Published root WebApplicationContext as ServletContext attribute with name
+            [org.springframework.web.context.WebApplicationContext.ROOT]
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296
+            - Root WebApplicationContext: initialization completed in 678 ms
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'requestContextFilter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'formContentFilter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'characterEncodingFilter'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans.logMappings:234
+            - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*]
+            order=-9900, requestContextFilter urls=[/*] order=-105
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans.logMappings:234
+            - Mapping servlets: dispatcherServlet urls=[/]
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter.init:240 -
+            Filter 'requestContextFilter' configured for use
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter.init:240
+            - Filter 'characterEncodingFilter' configured for use
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.web.servlet.filter.OrderedFormContentFilter.init:240 -
+            Filter 'formContentFilter' configured for use
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'i10A709BeApplication'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'testRestController'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'threadPoolTaskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'threadPoolTaskExecutorBuilder' via factory method to bean named
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'taskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'taskExecutorBuilder' via factory method to bean named
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
+            via constructor to bean named
+            'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'simpleAsyncTaskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'error'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'beanNameViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+            via constructor to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+            via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'conventionErrorViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'errorAttributes'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'basicErrorController'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via
+            constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via
+            constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via
+            constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@23d8d885'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+            via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+            via constructor to bean named
+            'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+            via constructor to bean named
+            'org.springframework.beans.factory.support.DefaultListableBeanFactory@23d8d885'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'welcomePageHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageHandlerMapping' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'welcomePageNotAcceptableHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named
+            'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'localeResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'themeResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'flashMapManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcValidator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'requestMappingHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerMapping' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerMapping' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerMapping' via factory method to bean named
+            'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.detectHandlerMethods:294 -
+            c.s.i.R.TestRestController:
+            {GET [/test]}: test()
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.detectHandlerMethods:294 -
+            o.s.b.a.w.s.e.BasicErrorController:
+            { [/error]}: error(HttpServletRequest)
+            { [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.handlerMethodsInitialized:366
+            - 3 mappings in 'requestMappingHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcPatternParser'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcUrlPathHelper'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcPathMatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewControllerHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'viewControllerHandlerMapping' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'viewControllerHandlerMapping' via factory method to bean named
+            'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'beanNameHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.detectHandlers:86 -
+            'beanNameHandlerMapping' {}
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'routerFunctionMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'messageConverters'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'stringHttpMessageConverter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mappingJackson2HttpMessageConverter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jacksonObjectMapper'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named
+            'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'parameterNamesModule'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jsonMixinModule'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jsonMixinModuleEntries'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jsonMixinModuleEntries' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.autoconfigure.AutoConfigurationPackages.get:213 -
+            @EnableAutoConfiguration was declared on a class in the package 'com.ssafy.i10a709be'. Automatic @Repository
+            and @Entity scanning is enabled.
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jsonMixinModule' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'jsonComponentModule'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named
+            'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cc02dd6'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named
+            'standardJacksonObjectMapperBuilderCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named
+            'jacksonObjectMapper'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'resourceHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'resourceHandlerMapping' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+          </div>
+          <div>[restartedMain] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings.logMappings:176 -
+            'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]],
+            /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath
+            [static/], classpath [public/], ServletContext [/]]}
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'defaultServletHandlerMapping'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'requestMappingHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named
+            'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'applicationTaskExecutor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:252 -
+            Initializing ExecutorService 'applicationTaskExecutor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:633
+            - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'handlerFunctionAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcUriComponentsContributor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mvcUriComponentsContributor' via factory method to bean named
+            'requestMappingHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'httpRequestHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'simpleControllerHandlerAdapter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'handlerExceptionResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'handlerExceptionResolver' via factory method to bean named
+            'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:305
+            - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mvcViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewNameTranslator'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'defaultViewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'viewResolver' via factory method to bean named
+            'org.springframework.beans.factory.support.DefaultListableBeanFactory@23d8d885'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'viewResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to
+            bean named 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mbeanExporter'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'objectNamingStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'mbeanExporter' via factory method to bean named
+            'org.springframework.beans.factory.support.DefaultListableBeanFactory@23d8d885'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'mbeanServer'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.jmx.support.JmxUtils.locateMBeanServer:127 - Found MBeanServer:
+            com.sun.jmx.mbeanserver.JmxMBeanServer@4141d797
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'springApplicationAdminRegistrar'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.afterPropertiesSet:131
+            - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'applicationAvailability'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'lifecycleProcessor'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'lifecycleProcessor' via factory method to bean named
+            'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via
+            constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'threadPoolTaskSchedulerBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'threadPoolTaskSchedulerBuilder' via factory method to bean named
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'taskSchedulerBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'taskSchedulerBuilder' via factory method to bean named
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
+            via constructor to bean named
+            'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'simpleAsyncTaskSchedulerBuilder'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'httpMessageConvertersRestClientCustomizer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'restClientSsl'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'restClientSsl' via factory method to bean named 'sslBundleRegistry'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'restClientBuilderConfigurer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'multipartResolver'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketMessagingAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name
+            'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration' via
+            constructor to bean named
+            'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'restartingClassPathChangedEventListener'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'fileSystemWatcherFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'restartingClassPathChangedEventListener' via factory method to bean named
+            'fileSystemWatcherFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'classPathFileSystemWatcher'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'classPathRestartStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'classPathFileSystemWatcher' via factory method to bean named
+            'fileSystemWatcherFactory'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'classPathFileSystemWatcher' via factory method to bean named
+            'classPathRestartStrategy'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'conditionEvaluationDeltaLoggingListener'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean
+            'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'optionalLiveReloadServer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'liveReloadServer' via factory method to bean named
+            'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'optionalLiveReloadServer' via factory method to bean named 'liveReloadServer'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.boot.devtools.livereload.LiveReloadServer.start:113 - Starting
+            live reload server on port 35729
+          </div>
+          <div>[restartedMain] INFO
+            org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:59 - LiveReload server
+            is running on port 35729
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'liveReloadServerEventListener'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.registerDependentBeans:948 - Autowiring
+            by type from bean name 'liveReloadServerEventListener' via factory method to bean named
+            'optionalLiveReloadServer'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.beans.factory.support.DefaultListableBeanFactory.getSingleton:225 - Creating shared
+            instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration'
+          </div>
+          <div>[restartedMain] DEBUG
+            org.springframework.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:450 -
+            Registering beans for JMX exposure on startup
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.jmx.export.annotation.AnnotationMBeanExporter.registerBeans:557
+            - Auto-detecting user-defined JMX MBeans
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase -2147483647
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.doStart:290 -
+            Successfully started bean 'springBootLoggingLifecycle'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase 2147481599
+          </div>
+          <div>[restartedMain] INFO org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler
+            ["http-nio-8080"]
+          </div>
+          <div>[restartedMain] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:241 - Tomcat
+            started on port 8080 (http) with context path ''
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.doStart:290 -
+            Successfully started bean 'webServerStartStop'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase 2147482623
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.doStart:290 -
+            Successfully started bean 'webServerGracefulShutdown'
+          </div>
+          <div>[restartedMain] DEBUG org.springframework.context.support.DefaultLifecycleProcessor.start:464 - Starting
+            beans in phase 2147483647
+          </div>
+          <div>[http-nio-8080-exec-1] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -
+            Initializing Spring DispatcherServlet 'dispatcherServlet'
+          </div>
+          <div>[http-nio-8080-exec-1] INFO org.springframework.web.servlet.DispatcherServlet.initServletBean:532 -
+            Initializing Servlet 'dispatcherServlet'
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.initMultipartResolver:533
+            - Detected StandardServletMultipartResolver
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.initLocaleResolver:557 -
+            Detected AcceptHeaderLocaleResolver
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.initThemeResolver:583 -
+            Detected FixedThemeResolver
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG
+            org.springframework.web.servlet.DispatcherServlet.initRequestToViewNameTranslator:733 - Detected
+            org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4748c41
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.initFlashMapManager:797 -
+            Detected org.springframework.web.servlet.support.SessionFlashMapManager@efdb448
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:549 -
+            enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging
+            of potentially sensitive data
+          </div>
+          <div>[http-nio-8080-exec-1] INFO org.springframework.web.servlet.DispatcherServlet.initServletBean:554 -
+            Completed initialization in 2 ms
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/test", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to com.ssafy.i10a709be.RestController.TestRestController#test()
+          </div>
+          <div>[http-nio-8080-exec-1] INFO com.ssafy.i10a709be.RestController.TestRestController.test:15 - hi i'm client
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp,
+            image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported
+            [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:305
+            - Nothing to write: null body
+          </div>
+          <div>[http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            200 OK
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/favicon.ico", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG
+            org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:531 - Mapped to
+            ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/],
+            classpath [public/], ServletContext [/]]
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG
+            org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest:584 - Resource not found
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG
+            org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException:669 - Resolved
+            [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            404 NOT_FOUND
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - "ERROR"
+            dispatch for GET "/error", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*,
+            */*;q=0.8] and supported [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.traceDebug:120 - Writing
+            [{timestamp=Wed Feb 21 09:27:36 KST 2024, status=404, error=Not Found, trace=org.springframework.web.
+            (truncated)...]
+          </div>
+          <div>[http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1135 - Exiting
+            from "ERROR" dispatch, status 404
+          </div>
+          <div>[http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/test", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-3] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to com.ssafy.i10a709be.RestController.TestRestController#test()
+          </div>
+          <div>[http-nio-8080-exec-3] INFO com.ssafy.i10a709be.RestController.TestRestController.test:15 - hi i'm client
+          </div>
+          <div>[http-nio-8080-exec-3] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp,
+            image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported
+            [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-3] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:305
+            - Nothing to write: null body
+          </div>
+          <div>[http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            200 OK
+          </div>
+          <div>[http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/test", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-5] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to com.ssafy.i10a709be.RestController.TestRestController#test()
+          </div>
+          <div>[http-nio-8080-exec-5] INFO com.ssafy.i10a709be.RestController.TestRestController.test:15 - hi i'm client
+          </div>
+          <div>[http-nio-8080-exec-5] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp,
+            image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported
+            [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-5] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:305
+            - Nothing to write: null body
+          </div>
+          <div>[http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            200 OK
+          </div>
+          <div>[http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/test", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-6] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to com.ssafy.i10a709be.RestController.TestRestController#test()
+          </div>
+          <div>[http-nio-8080-exec-6] INFO com.ssafy.i10a709be.RestController.TestRestController.test:15 - hi i'm client
+          </div>
+          <div>[http-nio-8080-exec-6] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp,
+            image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported
+            [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-6] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:305
+            - Nothing to write: null body
+          </div>
+          <div>[http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            200 OK
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:120 - GET
+            "/test", parameters={}
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandler:531 - Mapped
+            to com.ssafy.i10a709be.RestController.TestRestController#test()
+          </div>
+          <div>[http-nio-8080-exec-7] INFO com.ssafy.i10a709be.RestController.TestRestController.test:15 - hi i'm client
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:275
+            - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp,
+            image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported
+            [application/json, application/*+json]
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG
+            org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.writeWithMessageConverters:305
+            - Nothing to write: null body
+          </div>
+          <div>[http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1138 - Completed
+            200 OK
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
