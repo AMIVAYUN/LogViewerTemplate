@@ -81,12 +81,12 @@ const ListLoaded = async( type, nid ) => {
 
     if( json[ 0 ].id > nid ){
         isDone = true;
-        logBox.innerHTML
+        logBox.innerHTML += `<div>더 이상 로그가 없습니다!</div>`
         return;
     }
 
     //박스를 비우고
-    logBox.innerHTML = `<div>더 이상 로그가 없습니다!</div>`
+    logBox.innerHTML = "";
 
     //새로운 것들을 넣고
     json.forEach( el => {
