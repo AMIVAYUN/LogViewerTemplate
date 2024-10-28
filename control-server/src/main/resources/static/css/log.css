@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KNPSKkomi-Regular00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KNPSKkomi-Regular00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.log-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: #E3E1D9 solid 2px;
+    width: 90vw;
+    height: 90vh;
+    padding: 10px 20px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.log-header {
+    background-color: #E3E1D9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+    width: 30%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 10fr;
+    flex: 8;
+    width: 100%;
+}
+
+.server-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vw;
+}
+
+.server-menu button {
+    margin: 0.3vw;
+    padding: 0.3vw;
+    outline: none;
+    border: #E3E1D9 solid 2px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: 'S-CoreDream-3Light';
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.log {
+    box-sizing: border-box;
+    margin: 0.5vw;
+    border-left: #E3E1D9 solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+.log-box {
+    font-family: 'KNPSKkomi-Regular00';
+    font-size: 1.3vw;
+    color: #000000;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.btn_logs:hover{
+    background-color: black;
+    color: white;
+}
